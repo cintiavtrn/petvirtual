@@ -330,7 +330,7 @@ body {
 
 /* ---- ERA HEADER ---- */
 .era-head {
-  padding: 48px 0 28px;
+  padding: 90px 0 28px; /* Aumentamos o topo para o menu fixo não engolir a frase */
 }
 .era-head .num-id {
   display: inline-block;
@@ -388,9 +388,11 @@ body {
 .p-year {
   font-family: 'Playfair Display', Georgia, serif;
   font-weight: 800;
-  font-size: clamp(48px, 6vw, 88px);
-  line-height: 0.82;
+  font-size: clamp(48px, 16vw, 88px); /* Agora ajusta elástico também no mobile */
+  line-height: 1; /* Desfaz o esmagamento vertical */
   letter-spacing: -0.04em;
+  margin: 8px 0; /* Dá um respiro para não encostar nos textos pequenos */
+  white-space: nowrap;
 }
 .p-year-sub {
   font-family: 'Playfair Display', Georgia, serif;
