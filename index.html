@@ -642,9 +642,9 @@ body {
   .tl-big-line { display: none; }
   
   /* Timeline superior e menu de Eras */
-  .timeline-sticky { padding: 8px 0; }
-  .timeline-row { grid-template-columns: auto 1fr auto; gap: 8px; }
-  .timeline-track { height: 32px; }
+  .timeline-sticky { padding: 8px 0 24px 0; } /* O padding 24px embaixo empurra a borda pra baixo e protege o título */
+  .timeline-row { grid-template-columns: auto 1fr auto; gap: 8px; align-items: start; }
+  .timeline-track { height: 48px; margin-top: 4px; } /* Aumenta a altura para conter as bolinhas e os textos perfeitamente */
   .timeline-points { gap: 2px; overflow-x: auto; padding: 0; justify-content: flex-start; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
   .timeline-points::-webkit-scrollbar { display: none; }
   .tl-nm { display: none; }
