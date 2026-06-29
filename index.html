@@ -642,9 +642,17 @@ body {
   .tl-big-line { display: none; }
   
   /* Timeline superior e menu de Eras */
-  .timeline-row { grid-template-columns: 1fr; gap: 14px; text-align: center; }
-  .timeline-points { gap: 12px; overflow-x: auto; padding-bottom: 8px; justify-content: flex-start; -webkit-overflow-scrolling: touch; }
+  .timeline-sticky { padding: 8px 0; }
+  .timeline-row { grid-template-columns: auto 1fr auto; gap: 8px; }
+  .timeline-track { height: 32px; }
+  .timeline-points { gap: 2px; overflow-x: auto; padding: 0; justify-content: flex-start; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .timeline-points::-webkit-scrollbar { display: none; }
   .tl-nm { display: none; }
+  .btn-home { font-size: 9px; padding: 5px 8px; letter-spacing: 0.1em; white-space: nowrap; }
+  .tl-counter { font-size: 9px; letter-spacing: 0.1em; white-space: nowrap; }
+  .tl-dot { width: 18px; height: 18px; }
+  .tl-point.ativo .tl-dot { width: 22px; height: 22px; }
+  .tl-yr { font-size: 8px; margin-top: 3px; }
   
   /* A MÁGICA: Força empilhamento em 1 coluna ignorando as configurações inline */
   .constellation { display: flex; flex-direction: column; gap: 3px; }
@@ -667,9 +675,9 @@ body {
   .p-year { font-size: 80px; }
   
   /* Ajustes dos pontinhos e rodapé */
-  .tl-yr { font-size: 11px; }
-  .tl-dot { width: 22px; height: 22px; }
-  .tl-point.ativo .tl-dot { width: 28px; height: 28px; }
+  .tl-yr { font-size: 8px; }
+  .tl-dot { width: 16px; height: 16px; }
+  .tl-point.ativo .tl-dot { width: 20px; height: 20px; }
   .foot .row { flex-direction: column; gap: 12px; text-align: center; }
 }
 </style>
